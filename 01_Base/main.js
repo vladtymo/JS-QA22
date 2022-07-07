@@ -19,6 +19,9 @@ let number = 10;
 let word = "Good";
 let flag = true;
 
+let nullVar = null;
+let undefinedVar = undefined; // not initialized
+
 // let number = 20; error
 // set another value
 number = 20;
@@ -48,8 +51,13 @@ let result = (2 + 2) * 2;
 
 console.log("Result = " + result);
 console.log(`Cube of result = ${result * result * result}`);
+
 // stepin operator: **
 console.log(`Cube of result = ${result ** 3}`);
+
+// operator: %
+result = 10 % 3;
+console.log(`10 % 3 = ${result}`);
 
 // get number from user
 //  +{string_variable} - convert string to number
