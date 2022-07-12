@@ -89,3 +89,19 @@ switch (month) {
         console.error("You entered incorrect month. Value must be in range 1...12!");
         break;
 }
+
+// show description of the number (positive, zero, negative)
+let number = +prompt("Enter your number:");
+
+// number > 0 and number == 0 and number < 0
+switch (true) {
+    case number > 0:
+        console.log("Number is positive.");
+        break;
+    case number == 0:
+        console.log("Number equals to zero.");
+        break;
+    case number < 0:
+        console.log("Number is negative.");
+        break;
+}
