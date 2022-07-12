@@ -65,3 +65,7 @@ let side = +prompt("Enter length of square side: ");
 
 console.log("type of side: " + typeof (side));
 console.log(`Perimeter of square: ${side + side + side + side} cm`);
+
+// unary operator - increment / decrement
+++number;
+--number;

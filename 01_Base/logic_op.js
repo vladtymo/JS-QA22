@@ -62,3 +62,24 @@ let isShow = confirm("Do you want to see the message?");
 if (isShow) {
     console.log("Blabla message...:)");
 }
+
+// -=-=-=-=-=-=-=-=- ternary operator ?: -=-=-=-=-=-=-=-=-
+// (condition) ? value_if_true : value_if_false
+number = 32;
+
+if (number % 2 == 0) {
+    console.log("Number is even!");
+}
+else {
+    console.log("Number is odd!");
+}
+
+// 1 - with ternary operator
+(number % 2 == 0) ? console.log("Number is even!") : console.log("Number is odd!");
+
+// 2 - with single console.log()
+let message = (number % 2 == 0) ? "even" : "odd";
+console.log(`Number is ${message}!`);
+
+// 3 - without variable
+console.log(`Number is ${(number % 2 == 0) ? "even" : "odd"}!`);
