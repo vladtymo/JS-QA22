@@ -24,8 +24,8 @@ let first = marks[0];
 let second = marks[1];
 
 // set elements
-marks[2] = 99;
-marks[5] = 30; // create element
+marks[2] = 12;
+marks[5] = 8.9; // create element
 
 // show elements
 for (let i = 0; i < marks.length; ++i) {
@@ -76,3 +76,14 @@ console.log("Array sorted " + array);
 // jagged array
 array = [1, 2, , 3];
 console.log("Empty element: " + array[2]);
+
+// -=-=-=-=-=-=-=-=- functions with arrays -=-=-=-=-=-=-=-=-
+function getSumm(array) {
+    let summ = 0;
+    for (let i = 0; i < array.length; ++i) {
+        summ += array[i];
+    }
+    return summ;
+}
+
+console.log("Function result: " + getSumm(marks));
